@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic</title>
+</head>
+<style>
+  .red {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+
+  }
+
+  .always-green .red {
+    background-color: green;
+
+  }
+
+  .margin {
+    margin: 5px 6px 7px 8px;
+  }
+
+  .padding {
+    padding: 1px 2px 3px 4px;
+  }
+
+  .border {
+    border-top: 1px solid blue;
+    border-right: 2px dashed purple;
+    border-bottom: 3px solid yellow;
+    border-left: 4px dashed pink;
+  }
+
+  .rgba {
+    color: rgba(200, 200, 200, 0.5);
+  }
+
+  .hover-el {
+    background-color: rgb(0, 50, 200);
+    height: 250px;
+    width: 250px;
+  }
+
+  .hover-el:hover {
+    background-color: rgb(0, 155, 200);
+  }
+
+  .active-el {
+    border: none;
+    height: 25px;
+    width: 25px;
+  }
+
+  .active-el:active {
+    border: 10px;
+    border-style: ridge;
+  }
+
+  .focus-el {
+    height: 25px;
+    width: 25px;
+    color: rgb(144, 77, 33);
+  }
+
+  .focus-el:focus {
+    color: rgb(150, 120, 150);
+  }
+</style>
+
+<body>
+  <div class="plain-div"></div>
+  <div class="red"></div>
+
+  <div class="always-green">
+    <div class="red"></div>
+  </div>
+
+  <div class="margin"></div>
+
+  <div class="padding"></div>
+
+  <div class="border"></div>
+  <div class="rgba">Test text</div>
+  <div class="inline-color" style="color: gray;">1234</div>
+  <div class="hover-el"></div>
+  <div class="active-el"></div>
+  <a href="#" class="focus-el">Hello world</a>
+</body>
+
+</html>

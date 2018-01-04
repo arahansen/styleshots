@@ -1,0 +1,16 @@
+{
+  "name": "styleshots",
+  "version": "0.1.0",
+  "description": "automated snapshot testing for your styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["styles", "css", "snapshot", "testing", "jest"],
+  "author": "Andrew Hansen <github.com/arahansen>",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^22.0.4",
+    "puppeteer": "^0.13.0"
+  }
+}
