@@ -4,6 +4,7 @@ const extractStyles = require("./extractStyles");
 module.exports = async ({
   url,
   selectors,
+  projectName = url,
   viewport: { width: viewportWidth = 1280, height: viewportHeight = 768 } = {}
 } = {}) => {
   let browser;
@@ -23,7 +24,7 @@ module.exports = async ({
     await page.goto(url);
   });
 
-  describe(url, () => {
+  describe(projectName, () => {
     selectors.forEach(async selector => {
       let options = {};
 
