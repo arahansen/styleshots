@@ -46,3 +46,11 @@ Array of selectors to snapshot. Each element in the array can be a string, or a 
 | `focus`       | boolean  | extracts styles for `selector` while element is focused.                   | false          |
 | `allMatches`  | boolean  | generates snapshot for all elements found that match `selector`.           | false          |
 | `projectName` | string   | set the name of the project under test. Used for generating snapshot title | `url`          |
+
+### `viewport`
+
+sets viewport of page. Defaults to `width: 1280, height: 768 }`.
+
+### `debug`
+
+Log console output from `url` page

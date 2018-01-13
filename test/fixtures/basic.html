@@ -67,6 +67,18 @@
   .focus-el:focus {
     color: rgb(150, 120, 150);
   }
+
+  .parent {
+    font-family: sans-serif;
+  }
+
+  .child {
+    border-radius: 7px;
+  }
+
+  .grandchild {
+    display: none;
+  }
 </style>
 
 <body>
@@ -87,6 +99,15 @@
   <div class="hover-el"></div>
   <div class="active-el"></div>
   <a href="#" class="focus-el">Hello world</a>
+
+  <div class="container-with-nesting">
+    <div class="parent">
+      <div class="child">
+        <span class="grandchild"></span>
+      </div>
+    </div>
+  </div>
+  
 </body>
 
 </html>

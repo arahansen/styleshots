@@ -121,6 +121,58 @@ Object {
 }
 `;
 
+exports[`Basic ".container-with-nesting *": parent > child > grandchild 1`] = `
+Object {
+  "cssFloat": "none",
+  "display": "none",
+  "fontFamily": "sans-serif",
+  "length": 283,
+  "perspectiveOrigin": "50% 50%",
+  "transformOrigin": "50% 50%",
+  "webkitLocale": "\\"en\\"",
+}
+`;
+
+exports[`Basic ".container-with-nesting *": parent > child 1`] = `
+Object {
+  "blockSize": "0px",
+  "borderBottomLeftRadius": "7px",
+  "borderBottomRightRadius": "7px",
+  "borderTopLeftRadius": "7px",
+  "borderTopRightRadius": "7px",
+  "cssFloat": "none",
+  "display": "block",
+  "fontFamily": "sans-serif",
+  "height": "0px",
+  "inlineSize": "1264px",
+  "length": 283,
+  "perspectiveOrigin": "632px 0px",
+  "transformOrigin": "632px 0px",
+  "webkitLocale": "\\"en\\"",
+  "webkitLogicalHeight": "0px",
+  "webkitLogicalWidth": "1264px",
+  "width": "1264px",
+}
+`;
+
+exports[`Basic ".container-with-nesting *": parent 1`] = `
+Object {
+  "blockSize": "0px",
+  "cssFloat": "none",
+  "display": "block",
+  "fontFamily": "sans-serif",
+  "height": "0px",
+  "inlineSize": "1264px",
+  "length": 283,
+  "perspectiveOrigin": "632px 0px",
+  "transformOrigin": "632px 0px",
+  "webkitLocale": "\\"en\\"",
+  "webkitLogicalHeight": "0px",
+  "webkitLogicalWidth": "1264px",
+  "width": "1264px",
+}
+`;
+
 exports[`Basic ".focus-el" 1`] = `
 Object {
   "blockSize": "25px",

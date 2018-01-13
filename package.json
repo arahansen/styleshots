@@ -1,6 +1,6 @@
 {
   "name": "styleshots",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "automated snapshot testing for your styles",
   "main": "index.js",
   "scripts": {

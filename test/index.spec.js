@@ -6,6 +6,7 @@ const url = `file://${path.resolve(__dirname, "./fixtures/basic.html")}`;
 styleshots({
   url,
   projectName: "Basic",
+  debug: true,
   selectors: [
     ".plain-div",
     ".red",
@@ -26,6 +27,7 @@ styleshots({
     {
       selector: ".focus-el",
       focus: true
-    }
+    },
+    { selector: ".container-with-nesting *", allMatches: true }
   ]
 });

@@ -5,6 +5,7 @@ module.exports = async ({
   url,
   selectors,
   projectName = url,
+  debug,
   viewport: { width: viewportWidth = 1280, height: viewportHeight = 768 } = {}
 } = {}) => {
   let browser;
@@ -16,10 +17,12 @@ module.exports = async ({
 
     page.setViewport({ width: viewportWidth, height: viewportHeight });
 
-    page.on("console", msg => {
-      for (let i = 0; i < msg.args.length; ++i)
-        console.log(`${i}: ${msg.args[i]}`);
-    });
+    if (debug) {
+      page.on("console", msg => {
+        for (let i = 0; i < msg.args.length; ++i)
+          console.log(`${i}: ${msg.args[i]}`);
+      });
+    }
 
     await page.goto(url);
   });
@@ -38,11 +41,11 @@ module.exports = async ({
         const styles = await extractStyles({ page, selector });
 
         if (options.allMatches) {
-          styles.forEach(style => {
-            expect(style).toMatchSnapshot();
+          styles.forEach(({ styles: style, selector: fullSelector }) => {
+            expect(style).toMatchSnapshot(fullSelector);
           });
         } else {
-          expect(styles[0]).toMatchSnapshot();
+          expect(styles[0].styles).toMatchSnapshot(styles[0].fullSelector);
         }
       }
 
